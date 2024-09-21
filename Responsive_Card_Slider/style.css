@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("image.jpg") #030728 no-repeat center;
+}
+.slide-wrapper{
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+.card-list .card-item{
+  color: #fff;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 35px;
+  flex-direction: column;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+.card-list .card-item .user-image{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+.card-list .card-item .user-name{
+  font-size: 1.8rem;
+  margin-bottom: 21px;
+}
+.card-list .card-item .user-profession{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 39px;
+  color: #e3e3e3;
+}
+.card-list .card-item .message-button{
+  border: 1px solid transparent;
+  font-size: 18px;
+  padding: 8px 29px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: #030728;
+  font-weight: 400;
+  background: #fff;
+  transition: 0.3sec ease
+}
+.card-list .card-item .message-button:hover{
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+}
+.slider-wrapper .swiper-pagination-bullet{
+  background: #fff;
+  height: 15px;
+  width: 15px;
+}
+.slide-wrapper .swiper-slide-button{
+  color: #fff;
+  margin-top: -50px;
+}
+.slide-wrapper .swiper-slide-button:hover{
+  color: #4658ff;
+}
+@media(max-width:768px){
+  .slide-wrapper{
+    margin:0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button{
+    display: none;
+  }
+}
