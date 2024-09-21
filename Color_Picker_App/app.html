@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        .color-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Picker</h1>
+    <div class="color-container" id="color-container">
+        <div class="color-box" style="background-color: red;" data-color="Red"></div>
+        <div class="color-box" style="background-color: green;" data-color="Green"></div>
+        <div class="color-box" style="background-color: blue;" data-color="Blue"></div>
+        <div class="color-box" style="background-color: yellow;" data-color="Yellow"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
